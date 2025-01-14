@@ -7,8 +7,8 @@ module.exports = {
     overwrite: false,
     html: true,
     json: false,
-    embeddedScreenshots: true, // Adiciona screenshots ao relatório
-    inlineAssets: true // Inclui assets inline no relatório para visualização
+    embeddedScreenshots: true,
+    inlineAssets: true
   },
   video: true,
   retries: 3,
@@ -18,7 +18,8 @@ module.exports = {
     baseUrl: 'https://planoaliados.com.br/portal',
 
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      cypressMochawesomeReporter(on, config);
+      return config;
     },
   },
 };
