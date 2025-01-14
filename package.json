@@ -1,0 +1,14 @@
+{
+  "name": "testgenilson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Genilson Ferreira",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
